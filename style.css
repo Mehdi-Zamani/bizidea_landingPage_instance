@@ -1,5 +1,6 @@
 body {
   font-family: "Muli";
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -187,6 +188,7 @@ input:focus {
 .web-section-steps .web-step-line .web-step-item {
   margin-bottom: 30px;
   padding: 60px 20px;
+  text-align: center;
 }
 .web-section-steps .web-step-line .col-lg-3:nth-child(even) {
   margin: 225px 0 0;
@@ -597,5 +599,34 @@ input:focus {
   }
   .web-footer-section input::placeholder {
     font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .web-pricing-section .nav li > a > h4 {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .web-pricing-section .col-12 {
+    padding: 0 !important;
+  }
+  .web-pricing-section .nav li {
+    padding: 7px 3px;
+  }
+  .web-pricing-section .nav li > a {
+    margin: 7px 0;
+  }
+
+  .web-comment-section .comment .carousel-control-next,
+  .web-comment-section .comment .carousel-control-prev {
+    display: none;
+  }
+  .web-stratgy-section {
+    padding: 50px 10px;
+  }
+  .web-blog-section {
+    padding: 40px 0;
   }
 }
